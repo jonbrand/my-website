@@ -1,0 +1,83 @@
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: $white-light;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    padding: 8px 24px;
+    font-size: 24px;
+
+    transition: .5s ease;
+
+    position: relative;
+
+    // borda do link
+    &::after {
+        content: '';
+        display: block;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 0%;
+        height: 2px;
+
+        transform: translate(20%, -50%);
+        transition: .5s ease ;
+
+        background-color: $white-medium;
+    }
+
+    // efeito de opacidade
+    &:hover {
+        opacity: .8;
+
+        &::after {
+            width: 70%;
+        }
+    }
+}
+
+h1 {
+    font-size: 86px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    h1 {
+        font-size: 64px;
+    }
+}
+
+h2 {
+    font-size: 72px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    h1 {
+        font-size: 54px;
+    }
+}
+
+h3 {
+    font-size: 46px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 18px;
+}

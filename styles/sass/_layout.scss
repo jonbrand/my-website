@@ -1,0 +1,64 @@
+// MENU
+
+.menu {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 48px 16px;
+}
+
+// responsividade para mobile, para desaparecer links 
+@media screen and (max-width: 1200px) {
+    
+    .menu-left {
+        display: none;
+    }
+
+    .menu-right {
+        display: none;
+    }
+}
+
+
+// CONTAINER
+
+.container {
+    max-width: 1220px;
+
+    margin: 0 auto;
+
+    padding: 32px 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    height: 90vh;
+}
+
+// acessibilidade da tela para mobile
+@media screen and (max-width: 1200px) {
+    .hero {
+        height: auto;
+    }
+}
+
+.container-item:nth-child(1) {
+    flex-grow: 2;
+}
+
+.container-item:nth-child(2) {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 400px;
+    }
+}
