@@ -46,9 +46,10 @@ a {
 
 h1 {
     font-size: 86px;
+    line-height: 100%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
     
     h1 {
         font-size: 64px;
@@ -57,27 +58,69 @@ h1 {
 
 h2 {
     font-size: 72px;
+    line-height: 100%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
     
     h1 {
         font-size: 54px;
+        line-height: 120%;
     }
 }
 
 h3 {
     font-size: 46px;
+    line-height: 120%;
 }
 
 h4 {
     font-size: 32px;
+    line-height: 120%;
 }
 
 h5 {
     font-size: 24px;
+    line-height: 140%;
 }
 
 h6 {
     font-size: 18px;
+    line-height: 150%;
+}
+
+.mask {
+    background: radial-gradient(50% 50% at 50% 50%, #62FF5B 0%, rgba(98, 255, 91, 0) 100%), #2BC34C;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.square {
+    display: inline-block;
+    margin-top: 64px;
+    align-content: center;
+
+    font-size: 24px;
+
+    width: 180px;
+    height: 60px;
+    padding: 16px 24px;
+
+    position: relative;
+    transform: translate(-5%, 22%);
+
+    background-color: $green-light;
+
+    border-radius: 2;
+    
+
 }
