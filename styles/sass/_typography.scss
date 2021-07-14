@@ -12,6 +12,8 @@ a {
     padding: 8px 24px;
     font-size: 18px;
 
+    display: inline-block;
+
     transition: .5s ease;
 
     position: relative;
@@ -104,6 +106,10 @@ h6 {
     text-align: right;
 }
 
+.center {
+    text-align: center;
+}
+
 .square {
     display: inline-block;
     margin-top: 64px;
@@ -122,6 +128,4 @@ h6 {
     background-color: $green-light;
 
     border-radius: 2;
-    
-
 }

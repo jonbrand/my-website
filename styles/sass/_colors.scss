@@ -6,8 +6,14 @@ $black-light: #434343;
 $white-light: #fcfdfd;
 $white-medium: #f5f7f7;
 
-$grey-light: #d8dada;
+$gray-light: #d8dada;
 
 $green-light: #62ff5b;
 $green-medium: #35e147;
 $green-dark: #2bc34c;
+
+$gray-normal: rgb(82, 81, 81);
+
+.color-gray {
+    color: $gray-normal;
+}
